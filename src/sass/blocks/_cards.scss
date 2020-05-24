@@ -1,0 +1,166 @@
+.cards{
+	width: 1200px;
+	min-height: 450px;
+	box-shadow: 0 4px 20px #eef0f2;
+	border-radius: 5px;
+	background-color: #ffffff;
+	position: relative;
+	margin: 21px auto;
+	&__wrapper{
+		max-width: 870px;
+		padding: 20px 30px 25px;
+		ul{
+			list-style: none;
+			padding: 0;
+			
+		}
+		ul > li{
+			padding-left: 25px;
+			position: relative;
+			margin-bottom: 20px;
+			color: #333e50;
+			font-size: 16px;
+			font-weight: 400;
+			&:first-child{
+				margin-top: 20px;
+			}
+			
+		}
+		
+		ul > li:before{
+			content: url(../../img/svg/v.svg);
+			position: absolute; top: 0; left: 0px;
+			width: 14px;
+			height: 10px;
+			color: $main-color;
+		}
+	}
+	&__title{
+		margin: 0;
+		a{
+		color: #388ec3;
+		font-size: 18px;
+		font-weight: 400;
+		&:hover{
+			color: $main-color;
+		}
+		}
+	}
+	span{
+		color: #9299a2;
+		font-size: 14px;
+		font-weight: 400;
+		
+	}
+	.bold{
+		color: #333e50;
+		font-size: 16px;
+		font-weight: 900;
+		text-decoration: none;
+	}
+	&__text{
+		color: #333e50;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.88px;
+	}
+	
+	a{
+		color: #388ec3;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	&__link{
+		position: relative;
+	}
+	.arrow{
+		@include arrow-transform;
+		position: absolute; 
+		top: 7px; 
+		left: 90px;
+	}
+	&__right{
+		position: absolute;
+		top: 20px;
+		right: 86px;
+	}
+	&__img{
+
+	}
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		width: 110px;
+		padding: 0 0 15px;
+		margin: 0 auto;
+	}
+	&__rating{
+		display: inline;
+	}
+	&__star{
+		width: 16px;
+		height: 15px;
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		float: left;
+		margin: 10px;
+		padding: 0;
+		img{
+			padding-left: 1px;
+		}
+	}
+	&__count{
+		color: #388ec3;
+		font-size: 14px;
+		font-weight: 400;
+		float: right;
+		margin: 10px;
+	}
+	&__numeral {
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+		width: 860px;
+		margin: 0;
+		li{
+			list-style: none;
+			text-align: center;
+			line-height: 8px;
+			&:first-child{
+				text-align: left;
+				font-size: 18px;
+				font-weight: 900;
+			}
+		}
+		p{
+			color: #333e50;
+			font-size: 18px;
+			line-height: 8px;
+			
+		}
+	}
+	&__bottom{
+		border-top: 1px solid #e8ecef;
+		padding: 20px 30px 20px;
+		position: relative;
+	}
+	&__right{
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		span{
+			text-align: center;
+			display: block;
+			margin-top: 23px;
+			height: 16px;
+			color: #adb4bf;
+		}
+	}
+	&__buttons{
+		margin-top: 20px;
+		height: 28px;
+	}
+
+	
+}

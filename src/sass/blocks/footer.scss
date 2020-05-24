@@ -1,0 +1,50 @@
+.footer{
+	max-width: 1200px;
+	height: 102px;
+	box-shadow: 0 4px 20px #eef0f2;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin: 0 auto 60px;
+	position: relative;
+	.container{
+		padding: 20px;
+		z-index: 2;
+	}
+	&__title{
+		color: #333e50;
+		font-size: 22px;
+		font-weight: 900;
+		margin-top: 0;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 2;
+	}
+	&__text{
+		color: #333e50;
+		font-size: 16px;
+		font-weight: 400;
+		margin-top: 10px;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 2;
+	}
+	&__img{
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		right: 56px;
+	}
+	&__button{
+		position: relative;
+		z-index: 2;
+		float: right;
+		padding-top: 6px;
+	}
+	&__wrapper{
+		width: 870px;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+
+}

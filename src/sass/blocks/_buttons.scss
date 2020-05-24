@@ -1,0 +1,82 @@
+.button {
+    &_main {
+        width: 212px;
+        height: 45px;
+        box-shadow: 0 5px 10px rgba(149, 206, 90, 0.4);
+        border-radius: 5px;
+        background-color: $main-color;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        &_review{
+            width: 170px;
+            height: 50px;
+        }
+        &:hover{
+            box-shadow: 0 5px 10px rgba(149, 206, 90, 0.8);
+            background-color: #8cc459;
+        }
+        &:focus {
+            border: 1px solid #333e50;
+            background-color: $main-color;
+        }
+        &_disabled {
+            border-radius: 5px;
+            background-color: #adb4bf;
+            cursor: not-allowed;
+            box-shadow: none;
+            &:hover{
+                border-radius: 5px;
+            background-color: #adb4bf;
+            box-shadow: none;
+            }
+        }
+    }
+    &_white{
+        width: 212px;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid #dadee2;
+        background-color: #ffffff;
+        color: #333e50;
+        font-size: 16px;
+        font-weight: 400;
+        &:hover{
+            border: 1px solid #333e50;
+            background-color: #ffffff;
+        }
+        &:focus {
+            border: 1px solid #333e50;
+            background-color: #ffffff;
+        }
+        &_disabled {
+            border: 1px solid #dadee2;
+            background-color: #ffffff;
+            color: #adb4bf;
+            font-size: 16px;
+            font-weight: 400;
+            &:hover{
+                border: 1px solid #dadee2;
+                background-color: #ffffff;
+            }
+        }
+    }
+    &_submit {
+        padding: 0 20px 0;
+        height: 28px;
+        border-radius: 50px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #9299a2;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-right: 3px;
+        &_coral{
+            background-color: #ff8066;
+            color: #ffffff;
+            border:0;
+        }
+    }
+}

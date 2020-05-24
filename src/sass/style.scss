@@ -1,0 +1,25 @@
+@import 'base/variables';
+@import 'base/mixins';
+* {
+	font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #f1f4f7;
+}
+a{
+    text-decoration: none;
+    color:#388ec3;
+}
+button{
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@import 'blocks/header.scss';
+@import 'blocks/buttons';
+@import 'blocks/sort';
+@import 'blocks/cards';
+@import 'blocks/pagination';
+@import 'blocks/footer';
+@import 'blocks/media';

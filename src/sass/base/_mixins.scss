@@ -1,0 +1,19 @@
+@mixin arrow-transform{
+	background-image: url(../../img/svg/blue.svg);
+	width: 9px;
+	height: 10px;
+	&:hover{
+		background-image: url(../../img/svg/green.svg);
+	}
+	&:active{
+		background-image: url(../../img/svg/blue.svg);
+	}
+	
+	// display: inline;
+
+
+	// position: absolute;
+
+	// margin-left: 7px;
+
+}

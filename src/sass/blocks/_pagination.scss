@@ -1,0 +1,48 @@
+.page{
+	max-width: 1200px;
+	height: 102px;
+	box-shadow: 0 4px 20px #eef0f2;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin: 0 auto 30px;
+	.container{
+		padding: 30px;
+	}
+
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	width: 50px;
+	height: 45px;
+	margin: 0 auto;
+	a{
+		color: #333e50;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 14px;
+		padding: 14px 20px;
+		text-decoration: none;
+		border: 1px solid #ddd;
+	}
+}
+.pagination a.active {
+	border: 1px solid #dadee2;
+	background-color: #aeb4bf;
+	color: #fff;
+	}
+
+.pagination a:hover:not(.active) {
+	background-color: #f7fafc;
+	color: #b1b8c3;
+}
+
+.pagination a:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	}
+
+.pagination a:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}

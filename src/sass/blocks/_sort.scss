@@ -1,0 +1,145 @@
+.sort{
+	margin: 21px auto 0;
+	color: #adb4bf;
+	font-size: 13px;
+	font-weight: 400;
+	.container{
+		margin: 0 auto;
+	}
+	div{
+		
+	}
+	&__show{
+		display: inline-block;
+	}
+	&__update{
+		display: inline;
+		padding-right: 30px;
+		position: absolute;
+		right: 240px;
+		width: 140px;
+	}
+	&__text{
+		position: absolute;
+		right: 162px;
+	}
+	&__dropdown{
+		position: absolute;
+		right: 33px;
+		text-align: right;
+		cursor: pointer;
+		a.dashed{
+			text-decoration-style: none;
+			border-bottom: 1px #388ec3 dashed;
+			&:hover{
+				color: $main-color;
+				border-bottom: 1px $main-color dashed;
+			}
+		}
+		ul{
+			list-style: none;
+		}
+	}
+	.list{
+		// display: flex;
+		// flex-direction: column;
+		border-radius: 5px;
+		// border: solid 1px $main-color;
+		box-shadow: 0 9px 8px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		outline: none;
+		width: 256px;
+		max-height: 145px;
+		margin-top: 10px;
+		margin-right: -15px;
+		text-align: left;
+		color: #333e50;
+		font-size: 16px;
+		font-weight: 400;
+		position: relative;
+		z-index: 2;
+		
+		ul{
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			max-height: 145px;
+		}
+		ul::-webkit-scrollbar {
+			-webkit-appearance: none;
+		}
+		
+		ul::-webkit-scrollbar:vertical {
+			width: 0.5em;
+		}
+		
+		ul::-webkit-scrollbar:horizontal {
+			height: 0.5em;
+		}
+		ul:not(:empty)::-webkit-scrollbar-thumb {
+			border-radius: 0.25em;
+			background-color:#dadee2;
+		}
+		li{
+			border-bottom: 1px solid #e8ecef;
+			padding: 13px 12px 12px 12px;
+			position: relative;
+			&:hover{
+				background-color: #f6f9fc;
+			}
+			.list_check{
+				display: inline-block;
+				background-image: url(../../img/svg/gray.svg);
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: 12px;
+				top: 12px;
+				&_hidden{
+					display: none;
+				}
+	
+			}
+			
+		}
+		a{
+			color: #333e50;
+		}	
+	}	
+	.list_active{
+		a{
+			color: #9299A2;
+		}
+	}
+	
+	&__right{
+		display: inline-block;
+		float: right;
+		position: relative;
+		.corner{
+			width: 13px;
+			height: 13px;
+			background-color: #fff;
+			transform: rotate(45deg);
+			position: absolute;
+			right: 50px;
+			top: 20px;
+			z-index: 1;
+			display: block;
+		}
+	}
+	.arrow{
+		@include arrow-transform;
+		// display: table;
+		text-decoration-style: none;
+		border-bottom: 1px #388ec3 dashed;
+		position: absolute; 
+		top: 6px; 
+		right: 20px;
+		margin-left: 5px;
+		&:hover{
+			color: $main-color;
+			border-bottom: 1px $main-color dashed;
+		}
+	}
+}
