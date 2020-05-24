@@ -28,21 +28,27 @@
 		right: 33px;
 		text-align: right;
 		cursor: pointer;
+		width: 130px;
 		a.dashed{
 			text-decoration-style: none;
 			border-bottom: 1px #388ec3 dashed;
 			&:hover{
 				color: $main-color;
 				border-bottom: 1px $main-color dashed;
+				
 			}
 		}
-		ul{
-			list-style: none;
+		&:hover{
+			.list{
+				display: block;
+			}
+			.corner{
+				display: block;
+			}
 		}
+
 	}
 	.list{
-		// display: flex;
-		// flex-direction: column;
 		border-radius: 5px;
 		// border: solid 1px $main-color;
 		box-shadow: 0 9px 8px rgba(0, 0, 0, 0.1);
@@ -56,14 +62,16 @@
 		color: #333e50;
 		font-size: 16px;
 		font-weight: 400;
-		position: relative;
+		position: absolute;
+		right: 0px;
 		z-index: 2;
-		
+		display: none;
 		ul{
 			margin: 0;
 			padding: 0;
 			overflow: auto;
 			max-height: 145px;
+			list-style: none;
 		}
 		ul::-webkit-scrollbar {
 			-webkit-appearance: none;
@@ -111,22 +119,21 @@
 			color: #9299A2;
 		}
 	}
-	
+	.corner{
+		width: 13px;
+		height: 13px;
+		background-color: #fff;
+		transform: rotate(45deg);
+		position: absolute;
+		right: 50px;
+		top: 20px;
+		z-index: 1;
+		display: none;
+	}
 	&__right{
 		display: inline-block;
 		float: right;
 		position: relative;
-		.corner{
-			width: 13px;
-			height: 13px;
-			background-color: #fff;
-			transform: rotate(45deg);
-			position: absolute;
-			right: 50px;
-			top: 20px;
-			z-index: 1;
-			display: block;
-		}
 	}
 	.arrow{
 		@include arrow-transform;
