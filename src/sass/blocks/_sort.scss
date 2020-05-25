@@ -3,39 +3,48 @@
 	color: #adb4bf;
 	font-size: 13px;
 	font-weight: 400;
-	.container{
-		margin: 0 auto;
-	}
-	div{
-		
-	}
+	height: 16px;
 	&__show{
 		display: inline-block;
 	}
 	&__update{
 		display: inline;
 		padding-right: 30px;
-		position: absolute;
-		right: 240px;
-		width: 140px;
+		// position: absolute;
+		// right: 240px;
+		// width: 140px;
 	}
 	&__text{
-		position: absolute;
-		right: 162px;
+		margin-left: 150px;
+		// position: absolute;
+		// right: 162px;
 	}
 	&__dropdown{
-		position: absolute;
-		right: 33px;
+		// position: absolute;
+		// right: 33px;
 		text-align: right;
 		cursor: pointer;
-		width: 130px;
+		// width: 130px;
+		.arrow{
+			@include arrow-transform;
+			display: inline-block;
+			text-decoration-style: none;
+			border-bottom: 1px #388ec3 dashed;
+			// position: absolute; 
+			// top: 6px; 
+			// right: 20px;
+			margin-left: 5px;
+			&:hover{
+				color: $main-color;
+				border-bottom: 1px $main-color dashed;
+			}
+		}
 		a.dashed{
 			text-decoration-style: none;
 			border-bottom: 1px #388ec3 dashed;
 			&:hover{
 				color: $main-color;
 				border-bottom: 1px $main-color dashed;
-				
 			}
 		}
 		&:hover{
@@ -46,7 +55,6 @@
 				display: block;
 			}
 		}
-
 	}
 	.list{
 		border-radius: 5px;
@@ -57,13 +65,14 @@
 		width: 256px;
 		max-height: 145px;
 		margin-top: 10px;
-		margin-right: -15px;
+		margin-left: -70px;
 		text-align: left;
 		color: #333e50;
 		font-size: 16px;
 		font-weight: 400;
-		position: absolute;
-		right: 0px;
+		// position: absolute;
+		// right: 0px;
+		position: relative;
 		z-index: 2;
 		display: none;
 		ul{
@@ -107,8 +116,7 @@
 					display: none;
 				}
 	
-			}
-			
+			}	
 		}
 		a{
 			color: #333e50;
@@ -134,19 +142,5 @@
 		display: inline-block;
 		float: right;
 		position: relative;
-	}
-	.arrow{
-		@include arrow-transform;
-		// display: table;
-		text-decoration-style: none;
-		border-bottom: 1px #388ec3 dashed;
-		position: absolute; 
-		top: 6px; 
-		right: 20px;
-		margin-left: 5px;
-		&:hover{
-			color: $main-color;
-			border-bottom: 1px $main-color dashed;
-		}
 	}
 }

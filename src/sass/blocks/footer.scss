@@ -6,7 +6,7 @@
 	background-color: #ffffff;
 	margin: 0 auto 60px;
 	position: relative;
-	.container{
+	&__wrapper{
 		padding: 20px;
 		z-index: 2;
 	}
@@ -40,7 +40,7 @@
 		float: right;
 		padding-top: 6px;
 	}
-	&__wrapper{
+	&__block{
 		width: 870px;
 		margin: 0;
 		padding: 0;

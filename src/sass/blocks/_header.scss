@@ -1,14 +1,12 @@
-header{
-    background-color: #fff;
-}
-.container {
-    max-width: 1236px;
-    margin: 0 auto;
-}
+
 .header {
-    padding-top: 20px;
+    width: 100%;
     background-color: #fff;
     margin: 0 auto;
+    &__wrapper{
+        width: 1200px;
+        margin: 0 auto;
+    }
 
     &__title {
         color: #333e50;
@@ -28,6 +26,7 @@ nav{
     border-top: 1px solid #e8ecef;
     border-bottom: 1px solid #e8ecef;
     background-color: #fff;
+   
 }
 .menu {
     display: flex;
@@ -55,7 +54,7 @@ nav{
     &__item {
         position: relative;
         text-align: center;
-        width: 204px;
+        width: 200px;
         height: 90px;
         &:hover{
             background-color: #f8fbfe; 
@@ -66,7 +65,7 @@ nav{
             display: block ;
             position: absolute;
             top:7px;
-            left: 204px;
+            left: 199px;
             background-color: #f1f4f7; 
             margin-bottom: 2px;
             width: 2px;
