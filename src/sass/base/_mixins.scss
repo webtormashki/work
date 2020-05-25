@@ -1,11 +1,11 @@
 @mixin arrow-transform{
-	background: url("img/svg/blue.svg") center (center/cover) no-repeat;
+	background: url("../img/svg/blue.svg") center (center/cover) no-repeat;
 	width: 9px;
 	height: 10px;
 	&:hover{
-		background: url("img/svg/green.svg") center (center/cover) no-repeat;
+		background: url("../img/svg/green.svg") center (center/cover) no-repeat;
 	}
 	&:active{
-		background: url("img/svg/blue.svg") center (center/cover) no-repeat;
+		background: url("../img/svg/blue.svg") center (center/cover) no-repeat;
 	}
 }

@@ -2,6 +2,9 @@
 	div.list__mobile{
 		display: none;
 	}
+	.cards__link{
+		display: none;
+	}
 }
 @media (max-width: 85em){
 	.mobile{
@@ -348,7 +351,7 @@
 			}
 			.list_check{
 				display: inline-block;
-				background-image: url(img/svg/drop.svg);
+				background-image: url(../img/svg/drop.svg);
 				width: 10px;
 				height: 6px;
 				position: absolute;
