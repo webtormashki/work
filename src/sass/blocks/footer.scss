@@ -28,6 +28,7 @@
 		position: relative;
 		z-index: 2;
 		padding-bottom: 10px;
+		line-height: 22.88px;
 	}
 	&__img{
 		z-index: 1;
@@ -46,6 +47,9 @@
 		margin: 0;
 		padding: 0;
 		display: inline-block;
+	}
+	.text_visible{
+		display: none;
 	}
 
 }

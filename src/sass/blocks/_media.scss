@@ -1,5 +1,16 @@
+@media (max-width: 85em){
+	.text_visible{
+		display: none;
+	}
+}
 @media (max-width: 75em){
 	.menu__item span{
+		display: none;
+	}
+	.menu__item{
+		width: 145px;
+	}
+	.text_visible{
 		display: none;
 	}
 }
@@ -14,20 +25,166 @@
 	}
 	.menu__item {
 		position: relative;
+		width: 117px;
 		img{
 			position: absolute;
 			top: 10px;
 			left: 0px;
 		}
-		a{
-
-		}
+	}
+	.sort{
+		margin: 10px auto 0;
+	}
+	.text_visible{
+		display: none;
+	}
+	.footer__button{
+		float: left;
 	}
 }
 @media (max-width: 48em){
+	.container{
+		width:90%
+	}
 
-	
+	.menu__item{
+		width: 110px;
+	}
+	.menu{
+		padding-left: 12px;
+	}
+	.sort{
+		height: 40px;
+		text-align: left;
+		padding-right: 10px;
+		&__update{
+			padding-left: 30px;
+		}
+		&__right{
+			float: left;
+		}
+		&__text{
+			margin-left: 30px;
+		}
+		&__show{
+			padding-left: 30px;
+		}
+	}
+	.cards__numeral{
+		display: none;
+	}
+	.cards__right span{
+		display: none;
+	}
+	.button_submit{
+		display: none;
+	}
+	.footer__text {
+		display: none;
+	}
+	.text_visible{
+		display: none;
+	}
 }
 @media (max-width: 32em){
-	
+	.text_hidden{
+		display: none;
+	}
+	.footer .text_visible{
+		display: block;
+	}
+	.text_visible{
+		display: block;
+	}
+	.cards__link{
+		text-align: left;
+		padding-bottom: 20px;
+		font-size: 14px;
+	}
+	.menu__item span{
+		display: block;
+		left: 150px;
+	}
+	.arrow_hidden{
+		display: block;
+		@include arrow-transform;
+		position: absolute; 
+		top: 7px; 
+		left: 100px;
+	}
+	.menu{
+		margin-right: 30px;
+	}
+	.menu__item{
+		display: flex;
+		justify-content: space-between;
+		width: 150px;
+	}
+	.container{
+		width:90%
+	}
+	.page{
+		background-color: rgba(255,255,255,.0);
+		margin: 0 auto;
+		
+	}
+	.cards {
+		&_last{
+		margin: 21px 0 0;
+		}
+	}
+	.footer__wrapper{
+		height: 253px;
+	}
+	.footer{
+	height: 253px;
+	}
+	.footer__title{
+		font-size: 18px;
+	}
+	.footer__button{
+		position: absolute;
+		left: 15px;
+		bottom:20px;
+	}
+	.footer__text{
+		display: block;
+		font-size: 16px;
+		padding-top: 15px;
+	}
+	.footer__img{
+		position: absolute;
+		top: 50;
+		right: 0px;
+	}
+	.sort{
+		height: 80px;
+		padding-left: 0px;
+		text-align: left;
+		padding-top: 10px;
+		&__update{
+			padding-left: 0px;
+		}
+		&__right{
+			float: left;
+		}
+		&__text{
+			margin-left: 0px;
+			padding-top: 10px;
+			display: block;
+		}
+		&__show{
+			padding-left: 0px;
+		}
+
+	}
+	.dashed{
+		padding-top: 10px;
+			display: block;
+			margin-right: 50px;
+	}
+	.cards__img{
+		margin: 50px auto;
+	}
 }
+
