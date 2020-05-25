@@ -3,19 +3,20 @@
 	color: #adb4bf;
 	font-size: 13px;
 	font-weight: 400;
-	height: 16px;
+	height: 20px;
 	&__show{
 		display: inline-block;
 	}
 	&__update{
 		display: inline;
-		padding-right: 30px;
+		padding-left: 100px;
+		
 		// position: absolute;
 		// right: 240px;
 		// width: 140px;
 	}
 	&__text{
-		margin-left: 150px;
+		margin-left: 40px;
 		// position: absolute;
 		// right: 162px;
 	}

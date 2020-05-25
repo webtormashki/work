@@ -1,0 +1,33 @@
+@media (max-width: 75em){
+	.menu__item span{
+		display: none;
+	}
+}
+@media (max-width: 64em){
+	.menu__link p {
+		display: inline-block;
+		position: absolute;
+		top: 30px;
+		left: 50px;
+		text-align: left;
+		font-size: 11px;
+	}
+	.menu__item {
+		position: relative;
+		img{
+			position: absolute;
+			top: 10px;
+			left: 0px;
+		}
+		a{
+
+		}
+	}
+}
+@media (max-width: 48em){
+
+	
+}
+@media (max-width: 32em){
+	
+}
