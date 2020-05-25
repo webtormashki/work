@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="row">
     <!-- Header -->
     <header class="header">
         <div class="row">
@@ -29,8 +30,8 @@
                 <div class="col-xs">
                     <div class="container">
                         <ul class="menu">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="img/svg/best-cards.svg" alt="best">
+                            <li class="menu__item" id="menu">
+                                <a href="#" class="menu__link" id="link"><img src="img/svg/best-cards.svg" alt="best">
                                     <p class="title">Лучшие</p>
                                 </a>
                                 <span></span>
@@ -124,11 +125,12 @@
         </div>
     </section>
         <!-- Cards 1 -->
-        <section class="cards">
-            <div class="row">
-                <div class="col-xs">
-                    <!-- Text block -->
-                    <div class="cards__wrapper">
+    <section class="cards">
+        
+            <!-- Text block -->
+            <div class="cards__wrapper">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-8 col-md-10 col-lg-12">
                         <h2 class="cards__title"><a href="#">Карта рассрочки Халва</a></h2>
                         <span>Совкомбанк</span>&nbsp &nbsp<span>MasterCard</span>
 
@@ -150,7 +152,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
                 <div class="col-xs">
                     <!-- Image -->
                     <div class="cards__right">
@@ -177,11 +178,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs">
-                    <!-- Cards bottom -->
-                    <div class="cards__bottom">
+
+            <!-- Cards bottom -->
+            <div class="cards__bottom">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
                         <!-- Numerals -->
                         <ul class="cards__numeral">
                             <li>
@@ -201,21 +202,31 @@
                                 <p>1 560 ₽ в год</p>
                             </li>
                         </ul>
-                        <!-- Buttons small -->
-                        <div class="cards__buttons">
+                    </div>
+                    <!-- Button main -->
+                    <div class="cards__right">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <button class="button_main">Оформить карту</button>
+                        <span>3 654 заявки</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buttons small -->
+                <div class="cards__buttons">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <button class="button_submit button_submit_coral">Лучшая карта 2019</button>
                             <button class="button_submit">Низкая % ставка</button>
                             <button class="button_submit">Бесплатное обслуживание</button>
                         </div>
-                        <!-- Button main -->
-                        <div class="cards__right">
-                            <button class="button_main">Оформить карту</button>
-                            <span>3 654 заявки</span>
-                        </div>
                     </div>
                 </div>
+                        
+                    
+                </div>
             </div>
-        </section>
+        
+    </section>
         <!-- Cards 2-->
         <section class="cards">
             <div class="container">
@@ -412,6 +423,7 @@
             </div>
         </footer>
     </div>
+</div>
     <script src="js/script.js"></script>
 </body>
 

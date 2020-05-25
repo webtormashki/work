@@ -8,12 +8,14 @@
 	&__wrapper{
 		max-width: 870px;
 		padding: 20px 30px 25px;
+		margin: 0;
 		ul{
 			list-style: none;
 			padding: 0;
 			
 		}
 		ul > li{
+			list-style: none;
 			padding-left: 25px;
 			position: relative;
 			margin-bottom: 20px;
@@ -108,6 +110,9 @@
 		img{
 			padding-left: 1px;
 		}
+		ul{
+			list-style: none;
+		}
 	}
 	&__count{
 		color: #388ec3;
@@ -120,7 +125,7 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 0;
-		width: 860px;
+		max-width: 860px;
 		margin: 0;
 		li{
 			list-style: none;

@@ -29,19 +29,19 @@
 			@include arrow-transform;
 			display: inline-block;
 			text-decoration-style: none;
-			border-bottom: 1px #388ec3 dashed;
-			// position: absolute; 
-			// top: 6px; 
-			// right: 20px;
 			margin-left: 5px;
 			&:hover{
 				color: $main-color;
-				border-bottom: 1px $main-color dashed;
 			}
 		}
 		a.dashed{
 			text-decoration-style: none;
 			border-bottom: 1px #388ec3 dashed;
+			display: inline-block;
+			padding-bottom: 5px;
+			padding-right: 5px;
+
+			
 			&:hover{
 				color: $main-color;
 				border-bottom: 1px $main-color dashed;
