@@ -70,6 +70,9 @@
 		color: #388ec3;
 		font-size: 16px;
 		font-weight: 400;
+		&:hover{
+			color: $main-color;
+		}
 	}
 	&__link{
 		position: relative;
