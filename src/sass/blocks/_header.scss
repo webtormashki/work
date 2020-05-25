@@ -4,24 +4,20 @@
     background-color: #fff;
     margin: 0 auto;
     text-align: left;
-    &__wrapper{
-        width: 1200px;
-        margin: 0 auto;
-    }
-
     &__title {
         color: #333e50;
         font-size: 30px;
         font-weight: 900;
         text-align: left;
+        line-height: 30px;
     }
-    
     &__text {
         color: #333e50;
         font-size: 14px;
         font-weight: 400;
-        line-height: 20.02px;
+        line-height: 18px;
         text-align: left;
+        padding-bottom: 7px;
     }
 }
 nav{
@@ -29,11 +25,11 @@ nav{
     border-top: 1px solid #e8ecef;
     border-bottom: 1px solid #e8ecef;
     background-color: #fff;
-   overflow: scroll;
+    // overflow: scroll;
 }
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     // padding: 13px 70px;
@@ -41,7 +37,7 @@ nav{
     height: 90px;
     max-width: 1200px;
     img{
-        margin-top: 12px;
+        margin-top: 14px;
     }
     &__link {
         color: #333e50;
@@ -50,7 +46,7 @@ nav{
         text-decoration: none;
         
         p{
-            margin-top: 3px;
+            margin-top: 4px;
         }
         &:hover {
         color: $main-color;
@@ -70,7 +66,7 @@ nav{
             display: block ;
             position: absolute;
             top:7px;
-            left: 199px;
+            left: 200px;
             background-color: #f1f4f7; 
             margin-bottom: 2px;
             width: 2px;

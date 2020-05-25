@@ -1,5 +1,19 @@
+@media (min-width: 1200px){
+	div.list__mobile{
+		display: none;
+	}
+}
 @media (max-width: 85em){
 	.mobile{
+		display: none;
+	}
+	.cards__link{
+		display: none;
+	}
+	.mobile{
+		display: none;
+	}
+	div.list__mobile{
 		display: none;
 	}
 }
@@ -11,6 +25,9 @@
 		width: 145px;
 	}
 	.mobile{
+		display: none;
+	}
+	div.list__mobile{
 		display: none;
 	}
 }
@@ -32,7 +49,10 @@
 			left: 0px;
 		}
 	}
-	
+	div.list__mobile{
+		display: none;
+	}
+
 	.sort{
 		margin: 10px auto 0;
 	}
@@ -45,7 +65,7 @@
 }
 @media (max-width: 48em){
 	.container{
-		width:90%
+		width:100%;
 	}
 	.cards__right{
 		display: none;
@@ -73,9 +93,8 @@
 			padding-left: 30px;
 		}
 	}
-	.cards__numeral{
-		display: none;
-	}
+	
+	
 	.cards__right span{
 		display: none;
 	}
@@ -88,8 +107,20 @@
 	.mobile{
 		display: none;
 	}
+	.list__mobile{
+		display: none;
+	}
+
 }
 @media (max-width: 32em){
+	.header__title{
+		font-size: 26px;
+		padding-top: 10px;
+	}
+	.header__text{
+		font-size: 12px;
+		line-height: 21px;
+	}
 	.cards__right{
 		display: block;
 	}
@@ -104,12 +135,23 @@
 	}
 	.cards__link{
 		text-align: left;
-		padding-bottom: 20px;
-		font-size: 14px;
+		padding-top: -25px;
+		display: block;
+		font-size: 13px;
+		margin-bottom: 15px;
 	}
 	.menu__item span{
 		display: block;
-		left: 150px;
+		left: 140px;
+		
+	}
+	.menu__item img {
+		top: 0;
+		padding: 0;
+		margin-top: 10px;
+	}
+	.menu{
+		height: 60px;
 	}
 	.arrow_hidden{
 		display: block;
@@ -124,7 +166,34 @@
 	.menu__item{
 		display: flex;
 		justify-content: space-between;
-		width: 150px;
+		width: 140px;
+		height: 60px;
+		&:hover{
+			background-color: #f8fbfe; 
+			color: $main-color;
+			cursor: pointer; 
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			list-style: none;
+		}
+		ul::-webkit-scrollbar {
+			-webkit-appearance: none;
+		}
+		
+		ul::-webkit-scrollbar:vertical {
+			width: 0.5em;
+		}
+		
+		ul::-webkit-scrollbar:horizontal {
+			height: 0.5em;
+		}
+		ul:not(:empty)::-webkit-scrollbar-thumb {
+			border-radius: 0.25em;
+			background-color:#dadee2;
+		}
 	}
 	.container{
 		width:90%
@@ -184,13 +253,16 @@
 		}
 
 	}
+	.text_hidden{
+		display: none;
+	}
 	.dashed{
 		padding-top: 10px;
 			display: block;
 			margin-right: 50px;
 	}
 	.cards{
-		min-height: 490px;
+		min-height: 480px;
 	}
 	.cards__right{
 		position: absolute;
@@ -228,9 +300,20 @@
 		position: absolute;
 		margin: 60px auto 0px;
 		display: block;
+		// width: 300px;
+		text-align: center;
 		
 	}
-	div.list{
+	.button_white{
+		position: absolute;
+		margin: 60px auto 0px;
+		display: block;
+		// width: 300px;
+		text-align: center;
+		
+	}
+
+	div.list__mobile{
 		// border: solid 1px $main-color;
 		background-color: #fff;
 		outline: none;
@@ -241,34 +324,35 @@
 		font-size: 16px;
 		font-weight: 900;
 		position: absolute;
-		top: 190px;
+		top: 185px;
 		width: 100%;
 		left: 0;
-		overflow: hidden;
-
+		
+		z-index: 3;
 		display: block;
+		
 		ul{
 			margin: 0;
 			padding: 0;
-			overflow: auto;
+			overflow: hidden;
 			max-height: 145px;
 			list-style: none;
-			
+			height: 160px;
 		}
 		li{
 			border-bottom: 1px solid #e8ecef;
-			padding: 13px 12px 12px 12px;
+			padding: 13px 12px 12px 20px;
 			position: relative;
 			&:hover{
 				background-color: #f6f9fc;
 			}
 			.list_check{
 				display: inline-block;
-				background-image: url(../../img/svg/drop.svg);
+				background-image: url(img/svg/drop.svg);
 				width: 10px;
 				height: 6px;
 				position: absolute;
-				right: 15px;
+				right: 25px;
 				top: 20px;
 				&_hidden{
 					display: none;
@@ -285,12 +369,18 @@
 			font-weight: 400;
 			display: block;
 			text-align: center;
-			padding-top: 10px;
+			padding-top: 15px;
 		}	
 	}
 	.button_main_review{
 		position: absolute;
-		top: 0px;
+		top: -50px;
 		left: 0;
+	}
+	div.list__mobile{
+		display: block;
+	}
+	.cards__numeral{
+		display: none;
 	}
 }

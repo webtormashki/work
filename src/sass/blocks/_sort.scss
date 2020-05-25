@@ -12,7 +12,7 @@
 		padding-left: 100px;
 	}
 	&__text{
-		margin-left: 40px;
+		margin-left: 50px;
 	}
 	&__dropdown{
 		text-align: right;
@@ -31,8 +31,8 @@
 			text-decoration-style: none;
 			border-bottom: 1px #388ec3 dashed;
 			display: inline-block;
-			padding-bottom: 5px;
-			padding-right: 5px;
+			padding-bottom: 2px;
+			padding-right: 0px;
 			&:hover{
 				color: $main-color;
 				border-bottom: 1px $main-color dashed;
@@ -95,7 +95,7 @@
 			}
 			.list_check{
 				display: inline-block;
-				background-image: url(../../img/svg/gray.svg);
+				background-image: url(img/svg/gray.svg);
 				width: 15px;
 				height: 15px;
 				position: absolute;

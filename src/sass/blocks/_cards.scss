@@ -7,7 +7,7 @@
 	margin: 21px auto;
 	&__wrapper{
 		max-width: 870px;
-		padding: 20px 30px 25px;
+		padding: 10px 30px 25px;
 		margin: 0;
 		ul{
 			list-style: none;
@@ -18,18 +18,18 @@
 			list-style: none;
 			padding-left: 25px;
 			position: relative;
-			margin-bottom: 20px;
+			margin-bottom: 11px;
 			color: #333e50;
 			font-size: 16px;
 			font-weight: 400;
 			&:first-child{
-				margin-top: 20px;
+				margin-top: 18px;
 			}
 			
 		}
 		
 		ul > li:before{
-			content: url(../../img/svg/v.svg);
+			content: url(img/svg/v.svg);
 			position: absolute; top: 0; left: 0px;
 			width: 14px;
 			height: 10px;
@@ -84,9 +84,9 @@
 		left: 90px;
 	}
 	&__right{
-		position: absolute;
-		top: 20px;
-		right: 86px;
+		// position: absolute;
+		// top: 0px;
+		// right: 86px;
 	}
 	&__img{
 
@@ -95,7 +95,7 @@
 		display: flex;
 		justify-content: space-between;
 		width: 110px;
-		padding: 0 0 15px;
+		padding: 0 0 3px;
 		margin: 0 auto;
 	}
 	&__rating{
@@ -108,8 +108,9 @@
 		justify-content: space-between;
 		list-style-type: none;
 		float: left;
-		margin: 10px;
-		padding: 0;
+		margin: 8px;
+		padding: 2px;
+		cursor: pointer;
 		img{
 			padding-left: 1px;
 		}
@@ -155,7 +156,7 @@
 	&__right{
 		position: absolute;
 		top: 20px;
-		right: 30px;
+		right: 23px;
 		span{
 			text-align: center;
 			display: block;
@@ -165,7 +166,7 @@
 		}
 	}
 	&__buttons{
-		margin-top: 20px;
+		margin-top: 5px;
 		height: 28px;
 	}
 
