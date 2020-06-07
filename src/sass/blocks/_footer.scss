@@ -1,13 +1,12 @@
 .footer{
 	max-width: 1200px;
-	height: 102px;
 	box-shadow: 0 4px 20px #eef0f2;
 	border-radius: 5px;
 	background-color: #ffffff;
 	margin: 23px auto 60px;
 	position: relative;
 	&__wrapper{
-		padding: 26px 0 22px 22px;
+		padding: 26px 0 8px 22px;
 		z-index: 2;
 	}
 	&__title{
@@ -40,7 +39,7 @@
 		position: relative;
 		z-index: 2;
 		float: right;
-		padding-top: 6px;
+		// padding-top: 6px;
 		padding-right: 20px;
 	}
 	&__block{

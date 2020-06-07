@@ -1,35 +1,8 @@
+@import 'lib/flexboxgrid.min';
 @import 'base/variables';
 @import 'base/mixins';
-@import '../../node_modules/flexboxgrid/dist/flexboxgrid.css';
-* {
-    font-family: 'Lato', sans-serif;
-}
-html {
-    background: #f5f5f5;
-    overflow-x: hidden;
-  }
-body{
-    background-color: #f1f4f7;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
-a{
-    text-decoration: none;
-    color:#388ec3;
-}
-button{
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@import 'blocks/header.scss';
+@import 'base/general';
+@import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/sort';
 @import 'blocks/cards';

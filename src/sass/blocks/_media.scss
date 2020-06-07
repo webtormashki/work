@@ -1,18 +1,13 @@
 @media (min-width: 1200px){
-	div.list__mobile{
-		display: none;
+	.container{
+		width: 1200px;
 	}
-	.cards__link{
+	div.list__mobile{
 		display: none;
 	}
 }
 @media (max-width: 85em){
-	.mobile{
-		display: none;
-	}
-	.cards__link{
-		display: none;
-	}
+
 	.mobile{
 		display: none;
 	}
@@ -21,12 +16,10 @@
 	}
 }
 @media (max-width: 75em){
-	.menu__item span{
-		display: none;
+	.sort__text{
+		margin-left: 70px;
 	}
-	.menu__item{
-		width: 145px;
-	}
+
 	.mobile{
 		display: none;
 	}
@@ -35,17 +28,22 @@
 	}
 }
 @media (max-width: 64em){
+	.menu img {
+		margin-left: 15px;
+	}
+	.sort__text{
+		margin-left: 20px;
+	}
 	.menu__link p {
 		display: inline-block;
 		position: absolute;
 		top: 30px;
-		left: 50px;
+		left: 60px;
 		text-align: left;
-		font-size: 11px;
+		font-size: 9px;
 	}
 	.menu__item {
 		position: relative;
-		width: 117px;
 		img{
 			position: absolute;
 			top: 10px;
@@ -73,12 +71,7 @@
 	.cards__right{
 		display: none;
 	}
-	.menu__item{
-		width: 110px;
-	}
-	.menu{
-		padding-left: 12px;
-	}
+
 	.sort{
 		height: 40px;
 		text-align: left;
@@ -113,9 +106,36 @@
 	.list__mobile{
 		display: none;
 	}
-
+	.button_main_review{
+		margin: 10px;
+	}
+	.footer__title{
+		margin-left: 10px;
+	}
+	.list{
+		position: absolute;
+    left: 130px;
+	}
+	.menu{
+		padding-left: 20px;
+		width: 900px;
+		overflow: scroll;
+	}
 }
 @media (max-width: 32em){
+	.list{
+		padding-top: 10px;
+	}
+
+	.button_main_review{
+		margin-left: 10px;
+	}
+	.footer__title{
+		margin-left: 0px;
+	}
+	.cards__link{
+		display: none;
+	}
 	.header__title{
 		font-size: 26px;
 		padding-top: 10px;
@@ -135,14 +155,12 @@
 	}
 	.mobile{
 		display: block;
-	}
-	.cards__link{
 		text-align: left;
 		padding-top: -25px;
-		display: block;
 		font-size: 13px;
 		margin-bottom: 15px;
 	}
+	
 	.menu__item span{
 		display: block;
 		left: 140px;
@@ -165,11 +183,12 @@
 	}
 	.menu{
 		margin-right: 30px;
+		overflow: scroll;
+		width: 900px;
 	}
 	.menu__item{
 		display: flex;
 		justify-content: space-between;
-		width: 140px;
 		height: 60px;
 		&:hover{
 			background-color: #f8fbfe; 
@@ -179,7 +198,8 @@
 		ul{
 			margin: 0;
 			padding: 0;
-			overflow: auto;
+			width: 900px;
+			overflow: scroll;
 			list-style: none;
 		}
 		ul::-webkit-scrollbar {
@@ -301,7 +321,8 @@
 	}
 	.button_main{
 		position: absolute;
-		margin: 60px auto 0px;
+		margin-top: 60px;
+		margin-left: -16px;
 		display: block;
 		// width: 300px;
 		text-align: center;
@@ -309,7 +330,8 @@
 	}
 	.button_white{
 		position: absolute;
-		margin: 60px auto 0px;
+		margin-top: 60px;
+		margin-left: -16px;
 		display: block;
 		// width: 300px;
 		text-align: center;
@@ -378,7 +400,6 @@
 	.button_main_review{
 		position: absolute;
 		top: -50px;
-		left: 0;
 	}
 	div.list__mobile{
 		display: block;
